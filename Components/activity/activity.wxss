@@ -1,0 +1,103 @@
+/* components/activity/activity.wxss */
+.activity{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 9;
+  background: rgba(0, 0, 0, 0.6);
+}
+swiper {
+ padding-top: 15%;
+ height: 910rpx;
+}
+.activity_item {
+ width: 100%;
+ transform: scale(0.8);
+ transition: all 0.3s ease;
+ border-radius: 18rpx;
+ background: #fff;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-size: 28rpx;
+ overflow: hidden;
+}
+.activity_item.activity_item_active {
+ transform: scale(1);
+}
+.activity_img{
+  margin:20rpx 0;
+  width: 500rpx;
+  height: 500rpx;
+}
+.activity_title{
+  font-size: 36rpx;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.activity_title{
+  width: 90%;
+}
+.activity_store{
+  width: 90%;
+  margin: 15rpx 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity_store_name{
+
+  width: 60%;
+  color: #3b9cff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.activity_store_date{
+  color: #b2b2b2;
+}
+.activity_store_address{
+  width: 90%;
+  color: #b2b2b2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.activity_store_content{
+  margin: 10rpx 0;
+  width: 90%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  color: #2b2b2b;
+}
+.activity_detail_btn{
+  margin-top: 30rpx;
+  width: 100%;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-top: 1rpx solid #f0ebeb;
+  color: #3b9cff;
+}
+.activity_colse{
+  margin: auto;
+  margin-top: 10rpx;
+  transform: scale(-50%,-50%);
+  width: 30%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.activity_detail_btn:active{
+  background: #f1f1f1;
+}

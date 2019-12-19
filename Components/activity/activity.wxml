@@ -1,0 +1,19 @@
+<!--components/activity/activity.wxml-->
+<view class="activity" wx:if="{{activityList.length > 0}}">
+    <swiper previous-margin='50px' next-margin='50px'  bindchange="swiperChange">
+      <swiper-item wx:for='{{activityList}}' wx:key='index'>
+        <view  class='activity_item {{nowIdx==index?"activity_item_active":""}}'>
+          <image class="activity_img" node="aspectFit" src="{{item.activity_image}}"></image>
+          <view class="activity_title">{{item.activity_title}}</view>
+          <view class="activity_store">
+            <view class="activity_store_name">{{item.store_name}}</view>
+            <view class="activity_store_date">{{item.activity_date}}</view>
+          </view>
+          <view class="activity_store_address">{{item.store_address}}</view>
+          <view class="activity_store_content">{{item.activity_content}}</view>
+          <view class="activity_detail_btn" catchtap="activity_detail">查看详情</view>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="activity_colse" catchtap="cancel"><icon type="cancel" size="32" color="#fff"></icon></view>
+</view>

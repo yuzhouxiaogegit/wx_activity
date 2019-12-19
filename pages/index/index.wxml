@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="activity_box">
+  <activity-item activityList="{{storeActivityList}}" bind:activityCancel="activityCancel" bind:activityDetail="activityDetail"></activity-item>
+</view>
